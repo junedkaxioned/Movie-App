@@ -82,6 +82,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #22254b;
 }
 
 a { 
@@ -156,6 +157,11 @@ header .wrapper {
   overflow: hidden;
 }
 
+.movie-img img { 
+  height: 450px;
+  object-fit: cover;
+}
+
 .movie-info {
   padding: 0.5rem 1rem 1rem;
   display: flex;
@@ -178,6 +184,10 @@ header .wrapper {
   font-weight: 700;
 }
 
+.orange { color: #FFA500; }
+.red { color: #FF0000; }
+.green { color: #90EE90; }
+
 .overview {
   max-height: 100%;
   padding: 32px;
@@ -199,6 +209,10 @@ header .wrapper {
 .overview p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
 }
 
 /*=================================
